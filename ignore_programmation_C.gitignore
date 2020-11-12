@@ -1,0 +1,4 @@
+#ignore extensions exe et o
+
+*.exe
+*.O
