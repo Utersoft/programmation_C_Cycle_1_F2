@@ -1,7 +1,0 @@
-#ignore extensions exe et o
-
-*.exe '\n'
-*.o '\n'
-
-/programmation_C/bin/Debug/programmation_C.exe '\n'
-/programmation_C/obj/Debug/main.o '\n'
