@@ -1,2 +1,5 @@
 *.exe
 *.o
+
+/programmation_C/bin/Debug/programmation_C.exe
+/programmation_C/obj/Debug/main.o
