@@ -4,6 +4,7 @@
 
 void int_somme(int n_nb1, int n_nb2, int *n_Res);
 void init_tabEntier(int n_tabEntier[], int n_taille);
+char * get_tabCar(char c_tabCar[]);
 
 int main()
 {
@@ -78,7 +79,7 @@ int main()
     int n_tabEntier2[100];
     init_tabEntier(n_tabEntier2, 100);
 
-
+    char *pc_car = get_tabCar(c_tab);
 
     return 0;
 }
@@ -94,4 +95,15 @@ void init_tabEntier(int n_tabEntier[], int n_taille){
     for(n_i = 0; n_i < n_taille; n_i++){
         n_tabEntier[n_i] = 0;
     }
+}
+
+//retourner un tableau on utilise un pointeur
+char * get_tabCar(char c_tabCar[]){
+    int = n_i;
+
+    for(n_i = 0; n_i < 10; n_i++){
+        c_tabCar[n_i] = 'z';
+    }
+
+    return c_tabCar;
 }
