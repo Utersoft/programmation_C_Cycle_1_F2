@@ -22,10 +22,28 @@ int main(int argc, char *argv[])
             pRenderer = SDL_CreateRenderer(pWindow, -1, SDL_RENDERER_PRESENTVSYNC);
 
         }
+
+    }
+    if(pRenderer){
+        SDL_SetRenderDrawColor(pRenderer, 205, 92, 92, SDL_ALPHA_OPAQUE);
+
+        SDL_RenderClear(pRenderer);
+
+        SDL_RenderPresent(pRenderer);
+    }
+
+    SDL_Delay(1000);
+
+    if(pRenderer){
+        SDL_DestroyRenderer(pRenderer);
+    }
+
+    if(pWindow){
+        SDL_DestroyWindow(pWindow);
     }
 
 
-    SDL_Delay(10000);
+
 
     SDL_Quit();
 
